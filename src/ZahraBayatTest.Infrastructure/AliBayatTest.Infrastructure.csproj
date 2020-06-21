@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSharpFunctionalExtensions" Version="2.8.1" />
+    <PackageReference Include="Microsoft.EntityframeworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityframeworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZahraBayatTest.Domain\AliBayatTest.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

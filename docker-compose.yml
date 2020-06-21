@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  sqldata:
+     image: mcr.microsoft.com/mssql/server:2017-latest 
+
+  zahrabayattest.api:
+    image: ${DOCKER_REGISTRY-}zahrabayattestapi
+    build:
+      context: .
+      dockerfile: src/AliBayatTest.API/Dockerfile
+    depends_on:
+      - sqldata

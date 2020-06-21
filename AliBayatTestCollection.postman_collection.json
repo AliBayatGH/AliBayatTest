@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "56546351-5c3c-4334-ada5-ddd06a995601",
+		"name": "AliBayatTestCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4798/api/customers/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4798/api/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4798",
+					"path": [
+						"api",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4798/api/customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Ali\",\r\n  \"lastName\": \"Bayat\",\r\n  \"dateOfBirth\": \"1988-02-20T00:00:00\",\r\n  \"phoneNumber\": \"+989391818607\",\r\n  \"email\": \"ali.bayat.gh@gmail.com\",\r\n  \"bankAccountNumber\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4798/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4798",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4798/api/customers/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Ali\",\r\n  \"lastName\": \"Bayat\",\r\n  \"dateOfBirth\": \"1988-02-20T00:00:00\",\r\n  \"phoneNumber\": \"+989391818607\",\r\n  \"email\": \"ali.bayat.gh@gmail.com\",\r\n  \"bankAccountNumber\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4798/api/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4798",
+					"path": [
+						"api",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4798/api/customers/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4798/api/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4798",
+					"path": [
+						"api",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

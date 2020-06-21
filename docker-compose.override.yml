@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  sqldata:
+    environment:
+      - SA_PASSWORD=Pass@word
+      - ACCEPT_EULA=Y
+    ports:
+      - "5533:1433"
+
+  zahrabayattest.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5500:80"
+
+
+volumes:
+  eshop-sqldata:
+    external: true
+   
